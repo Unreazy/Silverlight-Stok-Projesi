@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2449/Uygulayıcı.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Stocker.Web.Fonksiyonlar" />
+  <xs:element name="TümKayıtlarıAl">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TümKayıtlarıAlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Stocker.Web.Fonksiyonlar" minOccurs="0" name="TümKayıtlarıAlResult" nillable="true" type="q1:ArrayOfBıcımlendır" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ekleme">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Stocker.Web.Fonksiyonlar" minOccurs="0" name="bcm" nillable="true" type="q2:Bıcımlendır" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EklemeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EklemeResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Güncelle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Stocker.Web.Fonksiyonlar" minOccurs="0" name="bcm" nillable="true" type="q3:Bıcımlendır" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GüncelleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GüncelleResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Silme">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bcm" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SilmeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SilmeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ara">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Stocker.Web.Fonksiyonlar" minOccurs="0" name="ara" nillable="true" type="q4:Bıcımlendır" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AraResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Stocker.Web.Fonksiyonlar" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Stocker.Web.Fonksiyonlar" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfBıcımlendır">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Bıcımlendır" nillable="true" type="tns:Bıcımlendır" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBıcımlendır" nillable="true" type="tns:ArrayOfBıcımlendır" />
+  <xs:complexType name="Bıcımlendır">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KullanıcıAdı" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UruhnAcıklama" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UrunFıyat" type="xs:int" />
+      <xs:element minOccurs="0" name="UrunIsmı" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UrunKodu" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Bıcımlendır" nillable="true" type="tns:Bıcımlendır" />
+</xs:schema>

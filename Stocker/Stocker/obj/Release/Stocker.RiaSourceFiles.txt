@@ -1,0 +1,1 @@
+D:\herşey\usb yedekler\Projeler\Stocker\Stocker.Web\Stocker.Web.csproj,635377745175304156,Fonksiyonlar\Bıcımlendır.cs,Kayıt.cs,Properties\AssemblyInfo.cs,SilverlightFaultBehavior.cs,Uygulayıcı.svc.cs,

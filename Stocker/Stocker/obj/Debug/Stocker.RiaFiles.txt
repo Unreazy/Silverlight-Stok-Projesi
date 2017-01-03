@@ -1,0 +1,2 @@
+D:\herşey\usb yedekler\Projeler\Stocker\Stocker
+Generated_Code\Stocker.Web.g.cs

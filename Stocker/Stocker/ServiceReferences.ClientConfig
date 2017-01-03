@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_Uygulayıcı">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:2449/Uygulay%C4%B1c%C4%B1.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_Uygulayıcı"
+                contract="Uygula.Uygulayıcı" name="CustomBinding_Uygulayıcı" />
+        </client>
+    </system.serviceModel>
+</configuration>
